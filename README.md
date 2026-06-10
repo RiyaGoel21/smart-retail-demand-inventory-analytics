@@ -1,16 +1,26 @@
-# Smart Retail Demand & Inventory Analytics | Python, Power BI
+# Smart Retail Demand & Inventory Analytics | Python & Power BI
 
 ## Project Overview
 
-Smart Retail Demand & Inventory Analytics is an end-to-end Data Analytics project focused on analyzing retail inventory performance, sales trends, demand forecasting behavior, and inventory risk management.
+Smart Retail Demand & Inventory Analytics is an end-to-end Data Analytics project designed to analyze retail inventory performance, sales trends, demand forecasting behavior, and inventory risk management.
 
-The project uses Python and Power BI to transform raw retail data into actionable business insights. It covers data cleaning, exploratory data analysis (EDA), inventory analytics, demand forecasting analytics, and dashboard development.
+The project transforms raw retail data into actionable business insights using Python and Power BI. The workflow includes data cleaning, feature engineering, exploratory data analysis (EDA), inventory analytics, demand forecasting analytics, and interactive dashboard development.
 
-The objective is to help retail businesses optimize inventory planning, understand demand patterns, monitor inventory risks, and improve decision-making through data-driven insights.
+## Project Highlights
+
+| Metric                          | Value                    |
+| ------------------------------- | ------------------------ |
+| Total Records Analyzed          | 73,100                   |
+| Product Categories              | 5                        |
+| Regions Covered                 | 4                        |
+| Dashboard Pages                 | 3                        |
+| Highest Revenue Category        | Furniture                |
+| Best Forecast Accuracy Category | Electronics              |
+| Tools Used                      | Python, Power BI, GitHub |
 
 ## Business Problem
 
-Retail businesses often face challenges such as:
+Retail businesses often face several challenges:
 
 * Overstocking and understocking
 * Inventory risk management
@@ -19,11 +29,11 @@ Retail businesses often face challenges such as:
 * Promotion effectiveness analysis
 * Revenue optimization
 
-This project addresses these challenges by analyzing inventory, sales, and forecasting data to identify trends and business opportunities.
+This project helps identify demand patterns, forecasting performance, sales trends, and inventory risks to support data-driven decision-making.
 
-## Dataset Features
+## Original Dataset Features
 
-The dataset contains retail inventory and sales information with the following key attributes:
+The raw dataset contained the following attributes:
 
 * Date
 * Store ID
@@ -40,11 +50,18 @@ The dataset contains retail inventory and sales information with the following k
 * Holiday Promotion
 * Competitor Pricing
 * Seasonality
+
+## Data Preparation & Feature Engineering
+
+Additional business-focused analytical features were created to support inventory and forecasting analysis:
+
 * Revenue
 * Forecast Error
 * Forecast Accuracy
 * ABC Classification
 * Risk Status
+
+These features were used to evaluate forecasting quality, inventory performance, product importance, and inventory risk levels.
 
 ## Tools & Technologies
 
@@ -72,9 +89,11 @@ The dataset contains retail inventory and sales information with the following k
 ## Project Workflow
 
 ```
-Data Understanding
+Raw Retail Dataset
         ↓
 Data Cleaning
+        ↓
+Feature Engineering
         ↓
 Exploratory Data Analysis (EDA)
         ↓
@@ -83,32 +102,6 @@ Inventory Analytics
 Demand Forecast Analytics
         ↓
 Power BI Dashboard Development
-```
-
-## Project Structure
-
-```
-smart-retail-demand-inventory-analytics/
-
-├── data/
-│
-├── notebooks/
-│   ├── 01_data_understanding.ipynb
-│   ├── 02_data_cleaning.ipynb
-│   ├── 03_eda.ipynb
-│   ├── 04_inventory_analytics.ipynb
-│   ├── 05_demand_forecasting_analytics.ipynb
-│   └── 06_dashboard_dataset.ipynb
-│
-├── sql/
-│
-├── dashboard/
-│
-├── screenshots/
-│
-├── requirements.txt
-│
-└── README.md
 ```
 
 ## Dashboard Overview
@@ -130,8 +123,6 @@ Features:
 
 ![Executive Dashboard](screenshots/page1_executive_dashboard.png)
 
----
-
 ### Page 2 – Inventory Analytics
 
 Features:
@@ -145,8 +136,6 @@ Features:
 ### Dashboard Preview
 
 ![Inventory Analytics](screenshots/page2_inventory_analytics.png)
-
----
 
 ### Page 3 – Demand Forecast Analytics
 
@@ -166,44 +155,49 @@ Features:
 ## Key Business Findings
 
 * Furniture generated the highest revenue among all categories.
-* Furniture recorded the highest demand forecast.
+* Furniture recorded the highest overall demand forecast.
 * Electronics achieved the highest forecasting accuracy.
-* Inventory risk remained relatively balanced across all risk segments.
-* Seasonal demand patterns influenced sales performance.
-* Promotional campaigns positively impacted sales volume.
+* Inventory risk remained balanced across risk categories.
+* Seasonal demand patterns significantly influenced sales performance.
+* Promotional activities contributed positively to sales volume.
 
 ## Business Recommendations
 
-* Maintain sufficient inventory levels for high-performing product categories.
-* Improve forecasting practices across all categories using high-accuracy forecasting strategies.
-* Monitor high-risk inventory products regularly.
-* Align procurement planning with seasonal demand trends.
-* Increase promotional activities during peak demand periods.
-* Use forecasting insights for proactive inventory management.
+* Maintain adequate inventory levels for high-performing categories.
+* Apply forecasting best practices across all categories.
+* Monitor inventory risk indicators regularly.
+* Align procurement planning with seasonal demand patterns.
+* Increase promotional efforts during peak demand periods.
+* Use forecasting insights to improve inventory planning.
 
-## Additional SQL Practice
+## Project Structure
 
-Business-oriented SQL queries were created for learning and analysis purposes, including:
+```
+smart-retail-demand-inventory-analytics/
 
-* Revenue by Category
-* Regional Performance Analysis
-* Inventory Risk Analysis
-* Product Performance Analysis
-
-SQL scripts are available in the `sql/` directory.
+├── data/
+│
+├── notebooks/
+│   ├── 01_data_understanding.ipynb
+│   ├── 02_data_cleaning.ipynb
+│   ├── 03_eda.ipynb
+│   ├── 04_inventory_analytics.ipynb
+│   ├── 05_demand_forecasting_analytics.ipynb
+│   └── 06_dashboard_dataset.ipynb
+│
+├── dashboard/
+│
+├── screenshots/
+│
+├── requirements.txt
+│
+└── README.md
+```
 
 ## Future Enhancements
 
 * Machine Learning-based demand forecasting
 * Inventory optimization models
 * Automated reporting pipelines
-* Real-time analytics dashboards
-* Predictive analytics for sales forecasting
-
-## Author
-
-### Riya Goel
-
-Aspiring Data Analyst | AI & ML Enthusiast
-
-GitHub: https://github.com/RiyaGoel21
+* Real-time inventory monitoring dashboards
+* Predictive analytics for inventory planning
